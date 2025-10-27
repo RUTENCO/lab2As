@@ -1,4 +1,4 @@
-package com.udea.lab2As;
+package com.udea.lab2_as;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

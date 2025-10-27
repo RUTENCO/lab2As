@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udea</groupId>
-	<artifactId>lab2As</artifactId>
+	<artifactId>lab2_as</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lab2As</name>
+	<name>lab2_as</name>
 	<description>Testing with SonarQube and CI/CD integration</description>
 	<url />
 	<licenses>
