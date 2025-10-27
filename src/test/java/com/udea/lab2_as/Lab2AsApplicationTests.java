@@ -11,6 +11,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 @SpringBootTest
 class Lab2AsApplicationTests {
 
+	@Test
+	void contextLoads() {
+		// Ejecuta el método main directamente, que a su vez cargará el contexto.
+        // Se le pasa un array de strings vacío, ya que el método main lo requiere.
+        Lab2AsApplication.main(new String[]{});
+	}
+
 	@Autowired
 	DataController dataController;
 

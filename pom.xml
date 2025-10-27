@@ -15,26 +15,31 @@
 	<name>lab2_as</name>
 	<description>Testing with SonarQube and CI/CD integration</description>
 	<url />
+
 	<licenses>
 		<license />
 	</licenses>
+
 	<developers>
 		<developer />
 	</developers>
+
 	<scm>
 		<connection />
 		<developerConnection />
 		<tag />
 		<url />
 	</scm>
+
 	<properties>
 		<java.version>21</java.version>
 
 		<sonar.projectKey>RUTENCO_lab2As</sonar.projectKey>
-        <sonar.organization>rutenco</sonar.organization>
+		<sonar.organization>rutenco</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,7 +57,6 @@
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
-		
 	</dependencies>
 
 
@@ -61,6 +65,26 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.12</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<!-- attached to Maven test phase -->
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
