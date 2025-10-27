@@ -87,6 +87,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>lab2As</finalName>
 	</build>
 
 </project>
