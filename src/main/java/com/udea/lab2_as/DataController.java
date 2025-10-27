@@ -28,7 +28,7 @@ public class DataController {
     @GetMapping("/nations")
     public JsonNode getRandomNations() {
         var objectMapper = new ObjectMapper();
-        var faker = new Faker(new Locale(LANGUAGE));
+        var faker = new Faker(Locale.forLanguageTag(LANGUAGE));
         var nations = objectMapper.createArrayNode();
         for (int i = 0; i < 10; i++) {
             var nation = faker.nation();
@@ -44,7 +44,7 @@ public class DataController {
     @GetMapping("/currencies")
     public JsonNode getRandomCurrencies() {
         var objectMapper = new ObjectMapper();
-        var faker = new Faker(new Locale(LANGUAGE));
+        var faker = new Faker(Locale.forLanguageTag(LANGUAGE));
         var currencies = objectMapper.createArrayNode();
         for (int i = 0; i < 20; i++) {
             var currency = faker.currency();
@@ -58,7 +58,7 @@ public class DataController {
     @GetMapping("/aviations")
     public JsonNode getRandomAviations() {
         var objectMapper = new ObjectMapper();
-        var faker = new Faker(new Locale(LANGUAGE));
+        var faker = new Faker(Locale.forLanguageTag(LANGUAGE));
         var aviations = objectMapper.createArrayNode();
         for (int i = 0; i < 20; i++) {
             var aviation = faker.aviation();
