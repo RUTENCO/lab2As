@@ -29,6 +29,11 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+
+		<sonar.projectKey>RUTENCO_lab2As</sonar.projectKey>
+        <sonar.organization>rutenco</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
 	</properties>
 	<dependencies>
 		<dependency>
